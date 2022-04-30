@@ -6,6 +6,16 @@
     color:wheat;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 3.5px double rgba(124, 9, 73, 0.877); */
+    box-shadow: 1px 1px 10px 1px rgba(124, 9, 73, 0.877);
+    margin-bottom: 10px;
+}
+
 .bg_video{
 	position: fixed; 
 	right: 0; 
@@ -19,17 +29,6 @@
     background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-size: cover;
-}
-
-
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    /* border-bottom: 3.5px double rgba(124, 9, 73, 0.877); */
-    box-shadow: 1px 1px 10px 1px rgba(124, 9, 73, 0.877);
-    margin-bottom: 10px;
 }
 
 header ul {
