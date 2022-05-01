@@ -11,8 +11,7 @@
 </head>
 <body>
     <header>
-        
-        <video autoplay loop poster="styles.css" class="bg_video">
+        <video autoplay loop poster="images/backvid.webm" class="bg_video">
             <source src="images/backvid.mp4" type="video/mp4">
             <source src="images/backvid.webm" type="video/webm">
         </video>
@@ -35,11 +34,11 @@
                 <i class="fa-regular fa-face-grin-wink"></i>
             </div>
 
-            <div id="arrow">
-                <i class="fas fa-sort-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>
                     Sobre o Dedé... Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
                     Impedit, omnis sapiente. Praesentium repudiandae commodi quia voluptatibus 
@@ -68,7 +67,7 @@
 
             <div id="form">
                 <div>
-                    <p>deixe seu contato!</p>
+                    <h3>deixe seu contato!</h3>
                 </div>
                 <form action="">
                     <input type="text" placeholder="seu melhor email :)">
@@ -78,5 +77,16 @@
 
         </section>
     </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+
+    </script>
+
 </body>
 </html>
