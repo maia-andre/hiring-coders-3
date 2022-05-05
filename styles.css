@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Arial Narrow', Arial, sans-serif;
-    color:wheat;
+    color:whitesmoke;
 }
 
 header {
@@ -12,23 +12,24 @@ header {
     align-items: center;
     padding: 10px;
     /* border-bottom: 3.5px double rgba(124, 9, 73, 0.877); */
-    box-shadow: 1px 1px 10px 1px rgba(124, 9, 73, 0.877);
+    /*box-shadow: 1px 1px 10px 1px rgba(124, 9, 73, 0.877); */
     margin-bottom: 10px;
 }
 
-.bg_video {
-	position:fixed; 
-	right: 0; 
+.bg_video { 
+    position:fixed;
+	right: 0;
 	bottom: 0;
-	min-width: 100%; 
+	min-width: 100%;
 	min-height: 100%;
-	width: auto;
-	height: auto;
+	width: 100px;
+	height: 100px;
 	z-index: -1000;
-	background:  #240b36;  /* fallback for old browsers */
+    background:  #240b36;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,#c31432, #240b36 );  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	background-size: cover;
+    background: linear-gradient(to right, royalblue, lightblue); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background: url(images/cover_background.jpg);*/
+    background-size:cover;
 }
 
 header ul {
@@ -102,16 +103,16 @@ a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    background: rgba(66, 6, 57, 0.65);
+    background: rgba(27, 12, 160, 0.616);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 30px rgba(16, 27, 182, 0.555);
     backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(9px);
-    border: 1px solid rgba(66, 6, 57, 0.3);
+    border: 1px solid rgba(63, 2, 23, 0.747);
 }
 
 .cards div {
-    border: 5.5px double rgba(124, 9, 73, 0.877);
+    border: 5.5px double rgba(63, 2, 23, 0.747);
     margin: 15px;
     flex-basis: 100%;
 }
@@ -121,7 +122,7 @@ a {
 }
 
 .cards hr {
-    border-color: rgba(124, 9, 73, 0.877);
+    border-color: rgba(63, 2, 23, 0.747);
 }
 
 #form {
